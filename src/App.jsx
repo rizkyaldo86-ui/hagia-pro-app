@@ -46,6 +46,9 @@ import {
 import { initializeApp } from 'firebase/app';
 import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from 'firebase/auth';
 import { getFirestore, collection, addDoc, onSnapshot, doc, deleteDoc, writeBatch, updateDoc, setDoc, deleteField } from 'firebase/firestore';
+import { getAuth } from "firebase/auth";
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAytu49JyqYW-tEEWgUS4xPY7-ypgqEblI",
@@ -55,7 +58,8 @@ const firebaseConfig = {
   messagingSenderId: "152322791693",
   appId: "1:152322791693:web:24f7790511cdad28573844"
 };
-
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
 // --- GEMINI API INTEGRATION ---
 const fetchGeminiAI = async (prompt, systemInstruction) => {
   const apiKey = ""; // API Key disediakan otomatis oleh environment saat eksekusi
