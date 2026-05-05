@@ -42,14 +42,6 @@ import {
 // V 1.22 (01 Mei 2026, 20:48 WIB) - Memperpendek parameter URL Booking menjadi ?b=1 dan menambahkan peringatan ruang uji coba.
 // ------------------------------
 
-// Firebase Imports
-import { initializeApp } from 'firebase/app';
-import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from 'firebase/auth';
-import { getFirestore, collection, addDoc, onSnapshot, doc, deleteDoc, writeBatch, updateDoc, setDoc, deleteField } from 'firebase/firestore';
-import { getAuth } from "firebase/auth";
-import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
-
 const firebaseConfig = {
   apiKey: "AIzaSyAytu49JyqYW-tEEWgUS4xPY7-ypgqEblI",
   authDomain: "hagia-pro.firebaseapp.com",
