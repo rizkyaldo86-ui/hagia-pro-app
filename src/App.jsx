@@ -55,6 +55,7 @@ const firebaseConfig = {
 };
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+const db = getFirestore(app);
 // --- GEMINI API INTEGRATION ---
 const fetchGeminiAI = async (prompt, systemInstruction) => {
   const apiKey = ""; // API Key disediakan otomatis oleh environment saat eksekusi
