@@ -1,4 +1,7 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
+import { initializeApp } from "firebase/app";
+import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "firebase/auth";
+import { getFirestore, collection, addDoc, onSnapshot, doc, deleteDoc, writeBatch, updateDoc, setDoc } from "firebase/firestore";
 import { 
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip as RechartsTooltip, Legend, ResponsiveContainer, 
   BarChart, Bar, Cell, AreaChart, Area, PieChart, Pie, Radar, RadarChart, PolarGrid, 
